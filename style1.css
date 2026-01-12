@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration:none ;
+    color: black;
+}
+
+.header{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    padding: 20px 0px;
+        ion-icon{
+            display: none;
+        }
+        a{
+            font-size: clamp(0.688rem, 0.508rem + 0.82vw, 1.25rem);
+        }
+
+    @media (max-width:351px){
+        a{
+            display: none;
+        }
+        ion-icon{
+            display: block;
+            font-size: clamp(1.5rem, 1.28rem + 1vw, 2.188rem);
+        }
+    }    
+}
+
+.blog{
+    padding: 40px 40px;
+    font-size:clamp(2.063rem, 1.843rem + 1vw, 2.75rem) ;
+
+    @media(max-width:351px){
+        font-size:clamp(1.188rem, 0.968rem + 1vw, 1.875rem);
+    }
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 40px;
+        h2{
+            font-size: clamp(1.188rem, 0.968rem + 1vw, 1.875rem);
+        }
+        p{
+            font-size: clamp(0.688rem, 0.588rem + 0.46vw, 1rem);
+            
+        }
+        
+        .data{
+            display: flex;
+            gap: 15px;
+            font-size: clamp(0.688rem, 0.508rem + 0.82vw, 1.25rem);
+                .tros{
+                    background-color: black;
+                    width: 2px;
+                    height: 10px;
+                }
+        }
+
+        @media (max-width:351px){
+            h2{
+                font-size: clamp(0.938rem, 0.718rem + 1vw, 1.625rem);
+            }
+            p{
+                font-size: clamp(0.688rem, 0.588rem + 0.46vw, 1rem);
+            }
+        }
+}
+
+footer{
+    padding: 30px 0px;
+    text-align: center;
+    font-size: clamp(0.688rem, 0.588rem + 0.46vw, 1rem);
+    .img{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px 0px;
+        }
+}
